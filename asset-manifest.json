@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Voice_Stroe/static/css/main.a5ce1d1a.css",
-    "main.js": "/Voice_Stroe/static/js/main.035f9ac1.js",
+    "main.js": "/Voice_Stroe/static/js/main.236ccd83.js",
     "static/js/787.0c3f432a.chunk.js": "/Voice_Stroe/static/js/787.0c3f432a.chunk.js",
     "static/media/iStock-937283086.jpg": "/Voice_Stroe/static/media/iStock-937283086.8d36c7771926fb1a83c5.jpg",
     "static/media/pngwing.com 14.png": "/Voice_Stroe/static/media/pngwing.com 14.cdc5bd7f99e11ff441a1.png",
@@ -24,11 +24,11 @@
     "static/media/pngwing.com 4.png": "/Voice_Stroe/static/media/pngwing.com 4.2244a8efe359369ea553.png",
     "index.html": "/Voice_Stroe/index.html",
     "main.a5ce1d1a.css.map": "/Voice_Stroe/static/css/main.a5ce1d1a.css.map",
-    "main.035f9ac1.js.map": "/Voice_Stroe/static/js/main.035f9ac1.js.map",
+    "main.236ccd83.js.map": "/Voice_Stroe/static/js/main.236ccd83.js.map",
     "787.0c3f432a.chunk.js.map": "/Voice_Stroe/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5ce1d1a.css",
-    "static/js/main.035f9ac1.js"
+    "static/js/main.236ccd83.js"
   ]
 }
