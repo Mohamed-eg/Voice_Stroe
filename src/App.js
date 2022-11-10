@@ -89,7 +89,8 @@ return prodect.prand===prand
     
       <Nav cardNo={count} handelCatagory={handelCatagory} />
       <Routes>
-        {/* <Route path="" element={<Navigate replace to="/home" />} /> */}
+        <Route path="" element={<Navigate replace to="/home" />} />
+        <Route path="/Voice_Stroe/" element={<Home prodacts={state} handelcount={addone}/>}></Route>
         <Route path="/" element={<Home prodacts={state} handelcount={addone}/>}></Route>
         <Route path="/home" element={<Home prodacts={state} handelcount={addone}/>}></Route>
         <Route path="/componants/bagcon/contact" element={<About />}></Route>
