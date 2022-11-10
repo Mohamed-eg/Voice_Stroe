@@ -21,75 +21,101 @@ import Shoes10 from './img/pngwing.com 8.png';
 import { Route, Routes, Navigate } from "react-router-dom";
 import React, { useState } from "react";
 function App() {
-  const mainData =[{id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes2 ,pris: 210 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
-  {id:`${Math.random()}`,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'41' , imgurl: Shoes10,pris: 270  },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
-  {id:`${Math.random()}`,prand:'Active',size:'44' , imgurl: Shoes2 ,pris: 210 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
-  {id:`${Math.random()}`,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
-  {id:`${Math.random()}`,prand:'Active',size:'41' , imgurl: Shoes10,pris: 270  },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes2 ,pris: 210 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
-  {id:`${Math.random()}`,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'41' , imgurl: Shoes10,pris: 270  },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
-  {id:`${Math.random()}`,prand:'Active',size:'44' , imgurl: Shoes2 ,pris: 210 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'41' , imgurl: Shoes5 ,pris: 280 },
-  {id:`${Math.random()}`,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
-  {id:`${Math.random()}`,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
-  {id:`${Math.random()}`,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
-  {id:`${Math.random()}`,prand:'Active',size:'41' , imgurl: Shoes10,pris: 270  }]
+  const mainData =[{id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes2 ,pris: 210 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'41' , imgurl: Shoes10,pris: 270  },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'44' , imgurl: Shoes2 ,pris: 210 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'41' , imgurl: Shoes10,pris: 270  },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes2 ,pris: 210 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'41' , imgurl: Shoes5 ,pris: 280 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'41' , imgurl: Shoes10,pris: 270  },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes1 ,pris: 200 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'44' , imgurl: Shoes2 ,pris: 210 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes3 ,pris: 220 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes4 ,pris: 260 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'41' , imgurl: Shoes5 ,pris: 280 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Nike',size:'45' , imgurl: Shoes6 ,pris: 300 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Adidas',size:'44' , imgurl: Shoes7 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Poma',size:'43' , imgurl: Shoes8 ,pris: 180 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Fashon',size:'42' , imgurl: Shoes9 ,pris: 250 },
+  {id:`${Math.random()}` ,num:0 ,prand:'Active',size:'41' , imgurl: Shoes10,pris: 270  }]
   const [count, setCount] = useState(0);
   const [added,setAdded]= useState([]);
  const [state,setState]=useState(mainData);
+//  const [num,setNum] = useState(mainData)
 
   const addone = (p) => {
     setCount(count + 1);
-    setAdded([...added,p]);
+ 
+    if (added.find((prodect)=>{return prodect.id==p.id})==undefined) {
+      p.num=p.num+1
+         setAdded([...added,p]);
+         
+    }
+    else{
+   setState([...state,state.filter((prodect)=>{return prodect.id==p.id})[0].num+=1])
+    }
+    // added.find((prodect)=>{return prodect.id==p.id})
   };
-  const handelDelete=(ID)=>{
-    setAdded([...added.filter((prodect)=>{return prodect.id!==ID})])
-    setCount(added.length-1);
+  // const ifTheBrodectChosed =(p)=>{
+  //   if (condition) {
+      
+  //   }
+  // }
+  const calcnum = ()=>{
+    let totalNum = added.map((pr)=>{return pr.num*1});
+    let totalNumSum = totalNum.reduce((total,eachnum)=>{return total+eachnum},0)
+    setCount(totalNumSum);
+  }
+  const handelDelete=(p)=>{
+    // p.num=p.num-1
+      setAdded([...added.filter((prodect)=>{return prodect.id!==p.id})])
+      setState([...state,state.filter((prodect)=>{return prodect.id==p.id})[0].num=0]) 
+      calcnum();
   }
   const TotalPris = added.map((p)=>{
-    return p.pris
+    return p.pris*p.num
   });
 const handelCatagory = (prand)=>{
-setState(mainData.filter((prodect)=>{
-return prodect.prand===prand
-}))
+if (prand==='all') {
+  setState(mainData)
+}else{
+  setState(mainData.filter((prodect)=>{
+    return prodect.prand===prand
+    }))
+}
 }
 
-  const sum = TotalPris.reduce((partialSum, a) => partialSum + a, 0);
+  const sum = TotalPris.reduce((total, eachPrise) => total + eachPrise, 0);
 
   return (
     <>
     
       <Nav cardNo={count} handelCatagory={handelCatagory} />
       <Routes>
-        <Route path="" element={<Navigate replace to="/home" />} />
+        <Route path="/Voice_Stroe/" element={<Navigate replace to="/home" />} />
         <Route path="/Voice_Stroe/" element={<Home prodacts={state} handelcount={addone}/>}></Route>
         <Route path="/" element={<Home prodacts={state} handelcount={addone}/>}></Route>
         <Route path="/home" element={<Home prodacts={state} handelcount={addone}/>}></Route>

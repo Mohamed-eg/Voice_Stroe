@@ -27,6 +27,7 @@ const Nav = (props) => {
          <Link to="#shop" onClick={()=>{props.handelCatagory('Nike')}}> <span><i className="fa-solid fa-face-grin-stars"></i></span>Nike</Link>
          <Link to="#shop" onClick={()=>{props.handelCatagory('Poma')}}> <span><i className="fa-solid fa-face-grin-stars"></i></span>Poma</Link>
          <Link to="#shop" onClick={()=>{props.handelCatagory('Active')}}> <span><i className="fa-solid fa-face-grin-stars"></i></span>Active</Link>
+         <Link to="#shop" onClick={()=>{props.handelCatagory('all')}}> <span><i className="fa-solid fa-face-grin-stars"></i></span>All</Link>
       </div>
       </div>
     <div className='listDiv' onClick={()=>{Open(state)}}>

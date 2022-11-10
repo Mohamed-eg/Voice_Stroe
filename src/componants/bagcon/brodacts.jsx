@@ -13,12 +13,22 @@ const Brodacts = (props) => {
       <h1>Type</h1>
       <h1>Size</h1>
       <h1>Pris</h1>
+      <h1>Num</h1>
       <span><i className="fa-solid fa-circle-minus"></i></span>
       </header>
      <>
      {
         props.prodectsAdded.map((p)=>{
-      return (<div className='singlProdact'key={p.id}><ShopingCard  prodects={p}/> <h2>{p.prand}</h2> <h2>{p.size}</h2> <h2>{`${p.pris}L.E`}</h2> <span onClick={()=>{props.handelDelete(p.id)}} ><i className="fa-regular fa-trash-can"></i></span> </div>
+      return (
+      <div className='singlProdact'key={p.id}>
+        <ShopingCard  prodects={p}/>
+         <h2>{p.prand}</h2>
+          <h2>{p.size}</h2>
+           <h2>{`${p.pris}L.E`}</h2>
+           <h2>{`${p.num} item`}</h2>
+            <span onClick={()=>{props.handelDelete(p)}} >
+              <i className="fa-regular fa-trash-can"></i></span>
+      </div>
          )
         })
       }
