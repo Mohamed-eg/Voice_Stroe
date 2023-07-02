@@ -37,7 +37,6 @@
             text-align: center;
             cursor: pointer;
             margin: 5px;
-            width: 10%;
            i{font-size: 20px;} 
         }
         span:hover{
@@ -64,6 +63,13 @@
     padding: 10px;
     border: 1px dashed black;
     border-radius: 10px;
+}
+.btmcountaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10vw;
 }
 
 @media (max-width:700px) {

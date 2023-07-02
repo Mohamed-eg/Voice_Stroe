@@ -1,11 +1,18 @@
 import "./styles/cart.css";
 import React from "react";
-
+import { Link } from "react-router-dom";
 const ShopingCard = (props) => {
   return (
     <div className="CardContaner">
       <div className="img">
-        <img src={props.prodects.imgurl} alt="" />
+        <Link
+          to={`/componants/bagcon/prodactDetales/${props.prodects.id}`}
+          // onClick={() => {
+          //   props.choseOne(props.prodects);
+          // }}
+          prodectsId={props.prodects.id}>
+          <img src={props.prodects.imgurl} alt="shoes" />
+        </Link>
       </div>
       <div>
         <h2>{props.prodects.prand} Shoes</h2>
@@ -17,11 +24,13 @@ const ShopingCard = (props) => {
           <span>44</span>
           <span>45</span>
         </div>
+        <div className="pris">
+          <h1>{props.prodects.pris}E.L</h1>
+        </div>
         <button
           onClick={() => {
             props.handelcount(props.prodects);
-          }}
-        >
+          }}>
           {`Add`}
           <i className="fa-solid fa-cart-plus"></i>
         </button>
